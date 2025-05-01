@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="320" fill="#ffffff" rx="5" ry="5"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Ollama-Gradio WebUI Architecture</text>
+  <text x="300" y="50" font-family="Arial" font-size="12" text-anchor="middle">Created by CraigFineTuned</text>
+  
+  <!-- Components -->
+  <!-- Web Browser -->
+  <rect x="50" y="90" width="120" height="80" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" rx="5" ry="5"/>
+  <text x="110" y="125" font-family="Arial" font-size="14" text-anchor="middle">Web Browser</text>
+  <text x="110" y="145" font-family="Arial" font-size="12" text-anchor="middle">Gradio UI</text>
+  
+  <!-- Python App -->
+  <rect x="240" y="90" width="120" height="80" fill="#f6ffed" stroke="#52c41a" stroke-width="2" rx="5" ry="5"/>
+  <text x="300" y="125" font-family="Arial" font-size="14" text-anchor="middle">app.py</text>
+  <text x="300" y="145" font-family="Arial" font-size="12" text-anchor="middle">Python Backend</text>
+  
+  <!-- Ollama -->
+  <rect x="430" y="90" width="120" height="80" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="5" ry="5"/>
+  <text x="490" y="125" font-family="Arial" font-size="14" text-anchor="middle">Ollama Server</text>
+  <text x="490" y="145" font-family="Arial" font-size="12" text-anchor="middle">LLM Models</text>
+  
+  <!-- Configuration -->
+  <rect x="240" y="210" width="120" height="60" fill="#f9f0ff" stroke="#722ed1" stroke-width="2" rx="5" ry="5"/>
+  <text x="300" y="235" font-family="Arial" font-size="14" text-anchor="middle">Configuration</text>
+  <text x="300" y="255" font-family="Arial" font-size="12" text-anchor="middle">prompt.json</text>
+  
+  <!-- Data Flow -->
+  <path d="M170 130 L240 130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="205" y="120" font-family="Arial" font-size="10" text-anchor="middle">HTTP</text>
+  
+  <path d="M360 130 L430 130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="395" y="120" font-family="Arial" font-size="10" text-anchor="middle">API</text>
+  
+  <path d="M300 170 L300 210" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="310" y="190" font-family="Arial" font-size="10" text-anchor="start">Reads</text>
+</svg>
